@@ -123,6 +123,24 @@ body{
     width: 220px;
     margin: 30px 0px 30px 300px;
 }
+#skilldiv2{
+    display: flex;
+    margin-left: 60px;
+}
+#skilldiv21{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#skilldiv21 div{
+    padding: 30px;
+    display: flex;
+}
+#skilldiv21 div div{
+    font-size: 25px;
+}
+#skillimg{
+    margin-left: 40px;
+}
 /* ============================ portfolio ================== */
 #portfolio{
     margin-top: 60px;
