@@ -17,6 +17,7 @@ body{
     position: sticky;
     top: 0px;
     z-index: 20;
+    overflow-x: hidden;
 }
 #startnav{
     list-style-type: none;
@@ -51,10 +52,29 @@ body{
     background-color: rgb(69, 57, 57);
     color: white;
 }
+@media(max-width: 425px){
+    #startnav{
+        margin-left: 0px;
+    }
+    #startnav li{
+        padding: 5px 8px 5px 8px;
+    }
+    #navbar li a{
+        font-size: 6px;
+    }
+    #endnav{
+        margin: 8px 0px 5px 0px;
+    
+    }
+    #endnav li a{
+        padding: 2px 5px 2px 5px;
+    }
+}
 /* ========================== hero section ================================ */
 #hero{
     display: flex;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #herointro{
     margin: 200px 0px 0px 250px;
@@ -89,33 +109,85 @@ body{
     margin: 80px 0px 0px 150px;
     padding-bottom: 0px;
 }
+#heroimg1 img{
+    width:590px;
+}
 #heroimg2{
     position: absolute;
     top: 90px;
-    right: 260px;
+    right: 240px;
+}
+#heroimg2 img{
+    width:550px;
+}
+@media(max-width:425px){
+    #hero{
+        display: block;
+    }
+    #herointro{
+        margin: 150px 0px 0px 90px;
+        
+    }
+    #heroimg1{
+        margin: 80px 0px 0px 20px;
+    }
+    #heroimg1 img{
+        width:400px;
+    }
+    #heroimg2{
+        position: absolute;
+        top: 475px;
+        right: 35px;
+    }
+    #heroimg2 img{
+        width:350px;
+    }
 }
 /* ======================= about section ===================== */
 #about{
     display: flex;
     background-color: whitesmoke;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #aboutimg{
     margin: 0px 0px 4px 80px;
+}
+#aboutimg img{
+    width:400px; 
 }
 #abouttitle{
     font-size: 50px;
     margin: 30px 0px 30px 230px;
     border-bottom: 2px solid black;
+    width: 260px;
 
 }
 #aboutpara{
     margin: 170px 120px 30px 120px;
     color: slategray;
 }
+@media(max-width: 425px){
+    #about{
+        display: block;
+    }
+    #aboutimg{
+        margin: 0px 0px 4px 40px;
+    }
+    #aboutimg img{
+        width:350px; 
+    }
+    #abouttitle{
+        margin: 30px 0px 30px 90px;
+        width: 260px;
+    }
+    #aboutpara{
+        margin: 40px 20px 30px 30px;
+    }
+}
 /* ======================== skills ====================== */
 #skills{
-    
+    overflow-x: hidden;
 }
 #skillname{
     font-size: 50px;
@@ -135,17 +207,50 @@ body{
     padding: 30px;
     display: flex;
 }
+#skilldiv21 div img{
+    width: 50px;
+}
 #skilldiv21 div div{
     font-size: 25px;
 }
 #skillimg{
     margin-left: 40px;
+    margin-top: 0px;
+}
+#skillimg img{
+    width: 400px;
+}
+@media(max-width: 425px){
+    #skillname{
+        margin: 30px 0px 30px 130px;
+    } 
+    #skilldiv2{
+        display: block;
+        margin-left: 20px;
+    }
+    #skilldiv21 div{
+        padding: 10px;
+    }
+    #skilldiv21 div img{
+        width: 20px;
+    }
+    #skilldiv21 div div{
+        font-size: 15px;
+    }
+    #skillimg{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    #skillimg img{
+        width: 300px;
+    }
 }
 /* ============================ portfolio ================== */
 #portfolio{
     margin-top: 60px;
     scroll-behavior: smooth;
     background-color: whitesmoke;
+    overflow-x: hidden;
 }
 #portfoliotitle{
     font-size: 50px;
@@ -159,6 +264,9 @@ body{
 #portfolioimg{
     margin: 60px 40px 0px 40px;
 }
+#portfolioimg img{
+    width:500px;
+}
 #project{
     margin: 30px 0px 30px 0px;
 }
@@ -170,14 +278,35 @@ body{
 #project12{
     display: flex;
     justify-content: space-evenly;
+    margin-left: 0px;
 }
 #project12 div{
     padding: 0px 60px 60px 0px;
+}
+@media(max-width:425px){
+    #portfoliotitle{
+        font-size: 50px;
+       margin: 30px 0px 30px 130px;
+    }
+    #portfoliodiv2{
+        display: block;
+    }
+    #portfolioimg img{
+        width: 400px;
+    }
+    #portfolioimg{
+        margin: 60px 30px 0px 30px;
+    }
+    #project12{
+        display: block;
+        margin-left: 40px;
+    }
 }
 /* ======================== services ======================== */
 #services{
     margin: 40px 0px 0px 0px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #service{
     font-size: 50px;
@@ -199,6 +328,7 @@ body{
     padding: 80px 50px 80px 50px;
     border-radius: 10%;
     background-color: aqua;
+    margin-bottom: 0px;
 }
 #services12{
     border: 2px solid black;
@@ -216,6 +346,7 @@ body{
     padding: 80px 50px 80px 50px;
     border-radius: 10%;
     background-color: antiquewhite;
+    margin-bottom: 0px;
 }
 #services22{
     border: 2px solid black;
@@ -234,6 +365,35 @@ body{
 .titlepara{
     color: slategray;
 }
+@media(max-width: 425px){
+    #service{
+       margin: 30px 0px 30px 130px;
+    }
+    #servicepara{
+        margin: 20px 10px 60px 60px;
+    }
+    #services1{
+        display: block;
+    }
+    #services11{
+        padding: 80px 30px 80px 30px;
+        margin-bottom: 60px;
+    }
+    #services12{
+        padding: 80px 30px 80px 30px;
+    }
+    #services2{
+        display: block;
+        margin-top: 60px;
+    }
+    #services21{
+        padding: 80px 30px 80px 30px;
+        margin-bottom: 60px;
+    }
+    #services22{
+        padding: 80px 30px 80px 30px;
+    }
+}
 /* =========================== contact ==================== */
 #contact{
     margin-top: 60px;
@@ -241,6 +401,7 @@ body{
     scroll-behavior: smooth;
     background-color: whitesmoke;
     padding: 0px 0px 30px 0px;
+    overflow-x: hidden;
 }
 #contactme{
     font-size: 50px;
@@ -284,8 +445,7 @@ body{
     border: 1.5px solid black;
 }
 #message{
-    margin-left: 250px;
-    margin-top: 100px;
+    margin: 250px 0px 0px 100px;
     background-color: white;
     padding: 30px 0px 0px 40px;
 }
@@ -317,4 +477,44 @@ button{
 button:hover{
     background-color: white;
     color: black;
+}
+@media(max-width: 425px){
+    #contact{
+        display: block;
+    }
+    #contactme{
+        margin: 30px 0px 60px 130px;
+    }
+    .address img{
+        width: 20px;
+        margin: 30px 20px 30px 40px;
+    }
+    .address span{
+        font-size: 20px;
+        margin: 30px 40px 30px 0px;
+    }
+    #contactfollow{
+        font-size: 30px;
+        width: 160px;
+    }
+    .contacticons a{
+        font-size: 15px;        
+    }
+    #message{
+        margin: 100px 20px 0px 20px;
+        padding: 30px 0px 0px 40px;
+    }
+    input[type="text"],input[type="email"],input[type="tel"]{
+        font-size: 15px;
+        width: 270px;
+    }
+    textarea{
+        width: 270px;
+        font-size: 15px;
+    }
+    button{
+        padding: 8px 20px 8px 20px;
+        font-size: 15px;
+        margin: 15px 0px 0px 60px;
+    }
 }
