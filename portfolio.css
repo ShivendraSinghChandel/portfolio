@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* ===================== navigation bar ======================== */
+#navbar{
+    display: flex;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+#startnav{
+    list-style-type: none;
+    display: flex;
+    margin-left: 100px;
+}
+#startnav li{
+    padding: 10px 35px 10px 35px;
+}
+#startnav li a:hover{
+     color: rgb(163, 9, 180);
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+#endnav{
+    margin: 15px 0px 0px 150px;
+    padding: 10px 25px 10px 25px;
+    list-style-type: none;
+
+}
+#endnav li a{
+    border: 2px solid black;
+    padding: 10px 15px 10px 15px;
+    border-radius:30%;
+    background-color: azure;
+}
+#endnav li a:hover{
+    border: 2px solid white;
+    background-color: rgb(69, 57, 57);
+    color: white;
+}
+/* ========================== hero section ================================ */
+#hero{
+    display: flex;
+    scroll-behavior: smooth;
+}
+#herointro{
+    margin: 200px 0px 0px 250px;
+    
+}
+#herointro1{
+    font-size: 35px;
+}
+#herointro2{
+    font-size: 45px;
+    margin-top: 10px;
+}
+#herointro3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+#herointro4{
+    margin-top: 50px;
+}
+#herointro4 a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px 10px 20px;
+    background-color: azure;
+    font-size: 18px;
+}
+#herointro4 a:hover{
+    background-color: rgb(69, 57, 57);
+    color: white;
+}
+#heroimg1{
+    margin: 80px 0px 0px 150px;
+    padding-bottom: 0px;
+}
+#heroimg2{
+    position: absolute;
+    top: 90px;
+    right: 240px;
+}
+/* ======================= about section ===================== */
+#about{
+    display: flex;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+#aboutimg{
+    margin: 0px 0px 4px 80px;
+}
+#abouttitle{
+    font-size: 50px;
+    margin: 30px 0px 30px 230px;
+    border-bottom: 2px solid black;
+
+}
+#aboutpara{
+    margin: 170px 120px 30px 120px;
+    color: slategray;
+}
+/* ======================== skills ====================== */
+#skills{
+    
+}
+#skillname{
+    font-size: 50px;
+    border-bottom: 2px solid black;
+    width: 220px;
+    margin: 30px 0px 30px 300px;
+}
+/* ============================ portfolio ================== */
+#portfolio{
+    margin-top: 60px;
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+}
+#portfoliotitle{
+    font-size: 50px;
+    border-bottom: 2px solid black;
+   width: 220px;
+   margin: 30px 0px 30px 300px;
+}
+#portfoliodiv2{
+    display: flex;
+}
+#portfolioimg{
+    margin: 60px 40px 0px 40px;
+}
+#project{
+    margin: 30px 0px 30px 0px;
+}
+.project1{
+    font-size: 20px;
+    font-weight:bold;
+    height: 0px;
+}
+#project12{
+    display: flex;
+    justify-content: space-evenly;
+}
+#project12 div{
+    padding: 0px 60px 60px 0px;
+}
+/* ======================== services ======================== */
+#services{
+    margin: 40px 0px 0px 0px;
+    scroll-behavior: smooth;
+}
+#service{
+    font-size: 50px;
+    border-bottom: 2px solid black;
+    width: 220px;
+   margin: 30px 0px 30px 300px;
+}
+#servicepara{
+    margin: 20px 0px 60px 300px;
+    color: slategray;
+}
+#services1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+#services11{
+    border: 2px solid black;
+    padding: 80px 50px 80px 50px;
+    border-radius: 10%;
+    background-color: aqua;
+}
+#services12{
+    border: 2px solid black;
+    padding: 80px 50px 80px 50px;
+    border-radius: 10%;
+    background-color: antiquewhite;
+}
+#services2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+#services21{
+    border: 2px solid black;
+    padding: 80px 50px 80px 50px;
+    border-radius: 10%;
+    background-color: antiquewhite;
+}
+#services22{
+    border: 2px solid black;
+    padding: 80px 50px 80px 50px;
+    border-radius: 10%;
+    background-color: aqua;
+}
+.serviceimg img{
+    width: 60px;
+}
+.servicetitle{
+    font-size: 30px;
+    padding: 15px 0px 15px 10px;
+    font-weight: bold;
+}
+.titlepara{
+    color: slategray;
+}
+/* =========================== contact ==================== */
+#contact{
+    margin-top: 60px;
+    display: flex;
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+    padding: 0px 0px 30px 0px;
+}
+#contactme{
+    font-size: 50px;
+    border-bottom: 2px solid black;
+    width: 220px;
+    margin: 30px 0px 60px 300px;
+}
+.address{
+    display: flex;
+}
+.address img{
+    width: 40px;
+    margin: 30px 30px 30px 60px;
+}
+.address span{
+    font-size: 25px;
+    margin: 30px 40px 30px 0px;
+}
+#contactfollow{
+    font-size: 40px;
+    margin: 40px 0px 30px 60px;
+    border-bottom: 2px solid black;
+    width: 220px;
+}
+#icons{
+    display: flex;
+    margin-left: 60px;
+}
+.contacticons a{
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    margin: 40px 25px 0px 0px;
+    
+}
+.contacticons a:hover{
+    background-color: white;
+    color: black;
+    border: 1.5px solid black;
+}
+#message{
+    margin-left: 250px;
+    margin-top: 100px;
+    background-color: white;
+    padding: 30px 0px 0px 40px;
+}
+input[type="text"],input[type="email"],input[type="tel"]{
+    font-size: 20px;
+    padding: 10px 0px 10px 20px;
+    width: 350px;
+    margin: 15px 0px 15px 0px ;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+textarea{
+    resize: none;
+    width: 365px;
+    height: 130px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px 0px 0px 20px;
+    outline:none;
+}
+button{
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+    margin: 15px 0px 0px 60px;
+    color: white;
+    background-color: rgb(86, 80, 80);
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
