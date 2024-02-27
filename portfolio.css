@@ -466,10 +466,11 @@ body {
 #skilldiv21 div {
     padding: 30px;
     display: flex;
+    object-fit: cover;
 }
 
 #skilldiv21 div img {
-    width: 50px;
+    width: 60px;
 }
 
 #skilldiv21 div div {
